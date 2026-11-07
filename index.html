@@ -194,7 +194,7 @@
     <p class="lead">Zegarek z jednobitowym ekranem OLED, czterema przyciskami i obudową z drukarki. Składasz go sam w jedno popołudnie.</p>
     <p class="sub">ESP32-S3, zegar DS3231, piezo i wibracje. Tarcze, stoper, minutnik, alarm, kalendarz, metronom, gra i Bluetooth do telefonu. Wszystko narysowane w stylu Mono You: jeden kolor, dither zamiast szarości, zaokrąglone piksele.</p>
     <div class="chips" aria-label="Najważniejsze dane">
-      <span class="chip">48 × 43 × 13 MM</span><span class="chip">OLED 128 × 64</span><span class="chip">ESP32-S3 + BLE</span><span class="chip">LI-PO 250 MAH</span><span class="chip">PASEK 20 MM</span>
+      <span class="chip">48 × 43 × 13 MM</span><span class="chip">OLED 128 × 64</span><span class="chip">ESP32-S3 + BLE</span><span class="chip">LI-PO 250 MAH</span><span class="chip">PASEK 20 / 22 MM</span>
     </div>
     <div class="ctas">
       <a class="btn" href="#zlozenie">Instrukcja złożenia</a>
@@ -299,7 +299,7 @@
             <tr><td><b>Rezystor 330 Ω</b> <span class="tag">ZŁOM</span><span class="note">Do bazy tranzystora. Paski pomarańczowy-pomarańczowy-brązowy.</span></td><td>1</td><td>stara elektronika</td><td class="num">0 zł</td></tr>
             <tr><td><b>Rezystor 33 kΩ (albo 47–470 kΩ, byle dwa jednakowe)</b> <span class="tag">ZŁOM</span><span class="note">Dzielnik do pomiaru baterii. Bez nich zegarek działa, tylko nie zna poziomu baterii.</span></td><td>2</td><td>stara elektronika</td><td class="num">0 zł</td></tr>
             <tr><td><b>Wkręty M2 × 5</b><span class="note">Samogwintujące albo maszynowe, 2 sztuki.</span></td><td>2</td><td><a href="https://allegro.pl/listing?string=wkr%C4%99ty%20m2x5" target="_blank" rel="noopener">Allegro</a></td><td class="num">ok. 5 zł</td></tr>
-            <tr><td><b>Pasek 20 mm + 2 teleskopy</b><span class="note">Najwygodniej z szybkozłączką (quick release).</span></td><td>1</td><td><a href="https://allegro.pl/listing?string=pasek%2020mm%20quick%20release" target="_blank" rel="noopener">Allegro</a></td><td class="num">ok. 20 zł</td></tr>
+            <tr><td><b>Pasek 20 mm lub 22 mm + 2 teleskopy</b><span class="note">Najwygodniej z szybkozłączką (quick release). Do paska 22 mm wydrukuj wersję obudowy 22 mm.</span></td><td>1</td><td><a href="https://allegro.pl/listing?string=pasek%2020mm%20quick%20release" target="_blank" rel="noopener">Allegro</a></td><td class="num">ok. 20 zł</td></tr>
             <tr><td><b>Filament PETG lub PLA</b><span class="note">Ok. 12 g na obudowę.</span></td><td>—</td><td>to, co masz</td><td class="num">ok. 1 zł</td></tr>
           </tbody>
         </table>
@@ -368,7 +368,8 @@
         <div class="card"><span class="k">OBRYSY</span><span class="v">4+</span><p class="mut">Uszy paska mają 2,4 mm. Więcej obrysów to mniejsze ryzyko pęknięcia przy zakładaniu teleskopu.</p></div>
       </div>
       <div class="dl" style="margin-top:14px">
-        <div class="item"><div class="meta"><b>STL do druku</b><span>Korpus i pokrywa v8 + notatka o druku · ZIP 106 KB</span></div><button class="btn" type="button" data-dl="files/PIXL_case_v8_STL.zip">Pobierz</button></div>
+        <div class="item"><div class="meta"><b>STL do druku · pasek 20 mm</b><span>Korpus i pokrywa v8 + notatka o druku · ZIP 106 KB</span></div><button class="btn" type="button" data-dl="files/PIXL_case_v8_STL.zip">Pobierz</button></div>
+        <div class="item"><div class="meta"><b>STL do druku · pasek 22 mm</b><span>Ten sam korpus z uszami rozsuniętymi do 22,4 mm + pokrywa · ZIP 106 KB</span></div><button class="btn" type="button" data-dl="files/PIXL_case_v8_22mm_STL.zip">Pobierz</button></div>
         <div class="item"><div class="meta"><b>Model CAD</b><span>STEP złożenia, plik Fusion 360 i skrypt, który generuje obudowę · ZIP 2,2 MB</span></div><button class="btn tonal" type="button" data-dl="files/PIXL_case_v8_CAD.zip">Pobierz</button></div>
         <p class="status" id="dlStatus" role="status" aria-live="polite"></p>
       </div>
@@ -389,7 +390,7 @@
         <li class="step" data-step="4"><span class="n">4</span><div class="body"><h3>Akumulator, zegar, wibracje</h3><ul><li>Akumulator w lewą górną część, pod ekranem.</li><li>DS3231 (bez gniazda) w lewy dolny róg, silnik wibracyjny w prawy górny.</li><li>Przylutuj tranzystory, rezystory i dzielnik baterii według tabeli okablowania. Zaizoluj wszystko koszulką albo kaptonem.</li></ul><button class="btn tonal show" type="button">Pokaż w 3D</button></div></li>
         <li class="step" data-step="5"><span class="n">5</span><div class="body"><h3>Piezo w pokrywie</h3><p class="mut">Przyklej krążek piezo w okrągłe zagłębienie od wewnątrz pokrywy. Cienka pokrywa rezonuje i wzmacnia dźwięk. Przewody do D8 i GND.</p><button class="btn tonal show" type="button">Pokaż w 3D</button></div></li>
         <li class="step" data-step="6"><span class="n">6</span><div class="body"><h3>Wgraj firmware i zamknij</h3><ul><li>Przed zamknięciem wgraj firmware (sekcja niżej) i sprawdź ekran, przyciski i dźwięk.</li><li>Wsuń pokrywę <b>zaczepem przy górnej krawędzi</b> w rowek górnej ścianki, potem dociśnij dół. Wkręć <b>2 wkręty M2 × 5</b> w dolne słupki (pierwszy raz powoli).</li></ul><div class="warn">Nie przekręcaj wkrętów w plastiku — gwint wycięty w PETG łatwo zerwać.</div><button class="btn tonal show" type="button">Pokaż w 3D</button></div></li>
-        <li class="step" data-step="7"><span class="n">7</span><div class="body"><h3>Pasek</h3><p class="mut">Przełóż teleskopy przez uszy paska 20 mm, wciśnij końcówki i wsuń między uszy, aż wskoczą w otwory. Uszy są przy samej pokrywie, więc pasek przylega do nadgarstka.</p><button class="btn tonal show" type="button">Pokaż w 3D</button></div></li>
+        <li class="step" data-step="7"><span class="n">7</span><div class="body"><h3>Pasek</h3><p class="mut">Przełóż teleskopy przez uszy paska 20 mm (albo 22 mm, jeśli drukowałeś wersję 22 mm), wciśnij końcówki i wsuń między uszy, aż wskoczą w otwory. Uszy są przy samej pokrywie, więc pasek przylega do nadgarstka.</p><button class="btn tonal show" type="button">Pokaż w 3D</button></div></li>
       </ol>
     </div>
   </section>
