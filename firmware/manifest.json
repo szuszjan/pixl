@@ -1,0 +1,16 @@
+{
+  "name": "PIXL",
+  "version": "2.1",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        {
+          "path": "PIXL_Firmware.ino.merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}
