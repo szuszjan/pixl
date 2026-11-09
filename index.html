@@ -194,7 +194,7 @@
     <p class="lead">Zegarek z jednobitowym ekranem OLED, czterema przyciskami i obudową z drukarki. Składasz go sam w jedno popołudnie.</p>
     <p class="sub">ESP32-S3, zegar DS3231, piezo i wibracje. Tarcze, stoper, minutnik, alarm, kalendarz, metronom, gra i Bluetooth do telefonu. Wszystko narysowane w stylu Mono You: jeden kolor, dither zamiast szarości, zaokrąglone piksele.</p>
     <div class="chips" aria-label="Najważniejsze dane">
-      <span class="chip">48 × 43 × 13 MM</span><span class="chip">OLED 128 × 64</span><span class="chip">ESP32-S3 + BLE</span><span class="chip">LI-PO 250 MAH</span><span class="chip">PASEK 20 / 22 MM</span>
+      <span class="chip">48 × 43 × 14,5 MM</span><span class="chip">OLED 128 × 64</span><span class="chip">ESP32-S3 + BLE</span><span class="chip">LI-PO 250 MAH</span><span class="chip">PASEK 20 / 22 MM</span>
     </div>
     <div class="ctas">
       <a class="btn" href="#zlozenie">Instrukcja złożenia</a>
@@ -227,7 +227,7 @@
   <section id="model">
     <div class="wrap">
       <div class="sec-head">
-        <span class="eyebrow">Model 3D · obudowa v9</span>
+        <span class="eyebrow">Model 3D · obudowa v11</span>
         <h2>Co jest w środku</h2>
         <p>Obracaj myszą lub palcem, przybliżaj kółkiem. Suwak rozsuwa warstwy. Korpus i pokrywa to prawdziwe pliki do druku, elektronika jest uproszczona do brył o realnych wymiarach.</p>
       </div>
@@ -367,9 +367,9 @@
         <div class="card"><span class="k">OBRYSY</span><span class="v">4+</span><p class="mut">Uszy paska mają 2,4 mm. Więcej obrysów to mniejsze ryzyko pęknięcia przy zakładaniu teleskopu.</p></div>
       </div>
       <div class="dl" style="margin-top:14px">
-        <div class="item"><div class="meta"><b>STL do druku · pasek 20 mm</b><span>Korpus i pokrywa v9 + notatka o druku · ZIP 106 KB</span></div><button class="btn" type="button" data-dl="files/PIXL_case_v9_STL.zip">Pobierz</button></div>
-        <div class="item"><div class="meta"><b>STL do druku · pasek 22 mm</b><span>Ten sam korpus z uszami rozsuniętymi do 22,4 mm + pokrywa · ZIP 106 KB</span></div><button class="btn" type="button" data-dl="files/PIXL_case_v9_22mm_STL.zip">Pobierz</button></div>
-        <div class="item"><div class="meta"><b>Model CAD</b><span>STEP złożenia, plik Fusion 360 i skrypt, który generuje obudowę · ZIP 2,2 MB</span></div><button class="btn tonal" type="button" data-dl="files/PIXL_case_v9_CAD.zip">Pobierz</button></div>
+        <div class="item"><div class="meta"><b>STL do druku · pasek 20 mm</b><span>Korpus i pokrywa v11 + notatka o druku · ZIP 106 KB</span></div><button class="btn" type="button" data-dl="files/PIXL_case_v11_STL.zip">Pobierz</button></div>
+        <div class="item"><div class="meta"><b>STL do druku · pasek 22 mm</b><span>Ten sam korpus z uszami rozsuniętymi do 22,4 mm + pokrywa · ZIP 106 KB</span></div><button class="btn" type="button" data-dl="files/PIXL_case_v11_22mm_STL.zip">Pobierz</button></div>
+        <div class="item"><div class="meta"><b>Model CAD</b><span>STEP złożenia, plik Fusion 360 i skrypt, który generuje obudowę · ZIP 2,2 MB</span></div><button class="btn tonal" type="button" data-dl="files/PIXL_case_v11_CAD.zip">Pobierz</button></div>
         <p class="status" id="dlStatus" role="status" aria-live="polite"></p>
       </div>
     </div>
@@ -465,7 +465,7 @@
 <footer>
   <div class="wrap">
     <span data-pixl="0.4" style="color:var(--mut)"></span>
-    <span>Projekt DIY · design system Mono You · firmware 2.3 · obudowa v9</span>
+    <span>Projekt DIY · design system Mono You · firmware 2.3 · obudowa v11</span>
   </div>
 </footer>
 
@@ -2006,7 +2006,7 @@ screen.position.set(-4.65, -0.1, 2.62);
 const modObjs = [box(-22, -13.5, 0, 22, 13.5, 1.6, pcbM), box(-16.9, -9.5, 1.6, 7.6, 7.0, 2.6, glassM), screen];
 [8.7, 3.03, -2.63, -8.3].forEach(y => { modObjs.push(box(12.5, y - 1.1, 1.6, 17.5, y + 1.1, 3.6, swM)); modObjs.push(box(13.8, y - 0.48, 3.6, 16.2, y + 0.48, 4.3, mat(0xd8d0bb))); });
 part('module', 'Moduł OLED', '#2a2e36', modObjs, 9);
-// internals (positions from the case v9 layout)
+// internals (positions from the case v11 layout)
 const ZB = -6.5;
 part('xiao', 'XIAO ESP32-S3', '#3b4250', [box(0.6, -24.9, -1.3, 21.6, -7.1, -0.3, mat(0x1f232b)), box(14.6, -20.45, -4.5, 22.0, -11.55, -1.3, mat(0xb9bec6, { metalness: 0.8, roughness: 0.3 })), box(1.6, -23.9, -3.8, 14.6, -8.1, -1.3, mat(0xa9aeb6, { metalness: 0.7, roughness: 0.35 }))], 5);
 part('battery', 'Akumulator 250 mAh', '#c3c7cf', [box(-21.6, -6.9, ZB + 0.7, 8.4, 13.1, ZB + 5.7, mat(0xc3c7cf, { metalness: 0.6, roughness: 0.35 }))], 1.5);
@@ -2125,7 +2125,7 @@ const PRESETS = {
   usb: ['y', -16.0, 1, 'Gniazdo USB-C XIAO w otworze prawej ścianki. XIAO leży pod płytką ekranu, elementami w dół.'],
   lug: ['x', 11.4, 1, 'Ucho paska: otwór na teleskop Ø1,1 mm tuż nad pokrywą, więc pasek przylega do nadgarstka.'],
   hook: ['x', 15.0, 1, 'Zaczep pokrywy wchodzi w rowek górnej ścianki. Pokrywę wsuwasz zaczepem, a potem dociskasz dół, aż zatrzaski klikną.'],
-  mid: ['x', 0.0, 1, 'Warstwy od frontu: panel 2,5 mm, moduł OLED, elektronika (akumulator, XIAO, DS3231), pokrywa 1,2 mm. Razem 13 mm.']
+  mid: ['x', 0.0, 1, 'Warstwy od frontu: panel 2,5 mm, moduł OLED, elektronika (akumulator, XIAO, DS3231), pokrywa 1,2 mm. Pokrywa ma rant 1,5 mm, który daje miejsce na przewody. Razem 14,5 mm.']
 };
 document.querySelectorAll('[data-pre]').forEach(b => b.addEventListener('click', () => {
   const [ax, v, f, note] = PRESETS[b.dataset.pre]; const was = sec.ax; sec.ax = 'off';
