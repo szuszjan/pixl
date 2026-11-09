@@ -321,8 +321,8 @@
             <tr><td>OLED SDA + DS3231 SDA</td><td><b>D4</b></td><td>5</td><td>wspólna magistrala I²C</td></tr>
             <tr><td>OLED SCL + DS3231 SCL</td><td><b>D5</b></td><td>6</td><td></td></tr>
             <tr><td>OLED VCC, DS3231 VCC</td><td><b>3V3</b></td><td>—</td><td>nie 5 V</td></tr>
-            <tr><td>Przycisk ^ (góra)</td><td><b>D9</b></td><td>8</td><td>do GND</td></tr>
-            <tr><td>Przycisk v (dół)</td><td><b>D7</b></td><td>44</td><td></td></tr>
+            <tr><td>Przycisk ^ (góra)</td><td><b>D9</b></td><td>8</td><td>do GND, każdy przycisk budzi z wyłączenia</td></tr>
+            <tr><td>Przycisk v (dół)</td><td><b>D1</b></td><td>2</td><td></td></tr>
             <tr><td>Przycisk ☰ (na płytce #)</td><td><b>D2</b></td><td>3</td><td></td></tr>
             <tr><td>Przycisk ↩ (na płytce *)</td><td><b>D3</b></td><td>4</td><td></td></tr>
             <tr><td>Piezo</td><td><b>D8</b></td><td>7</td><td>drugi przewód do GND</td></tr>
@@ -437,7 +437,7 @@
       <div class="sec-head">
         <span class="eyebrow">Obsługa</span>
         <h2>Cztery przyciski, jedno menu</h2>
-        <p>Na tarczy ^ i v zmieniają tarczę, ☰ otwiera menu aplikacji, ↩ wraca. Przytrzymaj ↩, żeby uśpić ekran, a 3 sekundy, żeby wyłączyć zegarek. Wyłączony włącza się po przytrzymaniu ^, ☰ albo ↩ przez sekundę, a sam budzi się o godzinie alarmu.</p>
+        <p>Na tarczy ^ i v zmieniają tarczę, ☰ otwiera menu aplikacji, ↩ wraca. Przytrzymaj ↩, żeby uśpić ekran, a 3 sekundy, żeby wyłączyć zegarek. Wyłączony włącza się po przytrzymaniu dowolnego przycisku przez sekundę, a sam budzi się o godzinie alarmu.</p>
       </div>
       <div class="keys" id="keys"></div>
       <div class="grid2" style="margin-top:14px">
