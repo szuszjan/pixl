@@ -7,4 +7,4 @@ Strona projektu: https://szuszjan.github.io/pixl/ (model 3D, części, okablowan
 - `index.html`: strona
 - `firmware/`: obraz firmware 2.3 + `manifest.json` dla ESP Web Tools
 - `app/`: koncept aplikacji PIXL Companion
-- `files/`: STL i CAD obudowy v9 (20 i 22 mm), źródła firmware
+- `files/`: STL i CAD obudowy v11 (20 i 22 mm), źródła firmware
